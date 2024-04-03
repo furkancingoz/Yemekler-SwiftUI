@@ -11,7 +11,7 @@ import SwiftUI
 struct Yemekler_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
