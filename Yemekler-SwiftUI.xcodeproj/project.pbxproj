@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6564C3782BC4B5AD00D32235 /* yemekler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6564C3772BC4B5AD00D32235 /* yemekler.sqlite */; };
+		6564C3882BC4B6EB00D32235 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C37D2BC4B6EB00D32235 /* FMResultSet.m */; };
+		6564C3892BC4B6EB00D32235 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C37E2BC4B6EB00D32235 /* FMDatabase.m */; };
+		6564C38A2BC4B6EB00D32235 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C3832BC4B6EB00D32235 /* FMDatabaseQueue.m */; };
+		6564C38B2BC4B6EB00D32235 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C3862BC4B6EB00D32235 /* FMDatabasePool.m */; };
+		6564C38C2BC4B6EB00D32235 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C3872BC4B6EB00D32235 /* FMDatabaseAdditions.m */; };
 		6581E14D2BB8C143007B6940 /* Yemekler_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581E14C2BB8C143007B6940 /* Yemekler_SwiftUIApp.swift */; };
 		6581E14F2BB8C143007B6940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581E14E2BB8C143007B6940 /* HomeView.swift */; };
 		6581E1512BB8C145007B6940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581E1502BB8C145007B6940 /* Assets.xcassets */; };
@@ -21,6 +26,18 @@
 /* Begin PBXFileReference section */
 		6564C3772BC4B5AD00D32235 /* yemekler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yemekler.sqlite; sourceTree = "<group>"; };
 		6564C37A2BC4B6A500D32235 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6564C37C2BC4B6EB00D32235 /* Yemekler-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yemekler-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		6564C37D2BC4B6EB00D32235 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		6564C37E2BC4B6EB00D32235 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		6564C37F2BC4B6EB00D32235 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6564C3802BC4B6EB00D32235 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		6564C3812BC4B6EB00D32235 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		6564C3822BC4B6EB00D32235 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		6564C3832BC4B6EB00D32235 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		6564C3842BC4B6EB00D32235 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		6564C3852BC4B6EB00D32235 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		6564C3862BC4B6EB00D32235 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6564C3872BC4B6EB00D32235 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		6581E1492BB8C143007B6940 /* Yemekler-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yemekler-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581E14C2BB8C143007B6940 /* Yemekler_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler_SwiftUIApp.swift; sourceTree = "<group>"; };
 		6581E14E2BB8C143007B6940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -49,6 +66,25 @@
 				6564C37A2BC4B6A500D32235 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6564C37B2BC4B6DC00D32235 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				6564C3812BC4B6EB00D32235 /* FMDatabase.h */,
+				6564C37E2BC4B6EB00D32235 /* FMDatabase.m */,
+				6564C37F2BC4B6EB00D32235 /* FMDatabaseAdditions.h */,
+				6564C3872BC4B6EB00D32235 /* FMDatabaseAdditions.m */,
+				6564C3842BC4B6EB00D32235 /* FMDatabasePool.h */,
+				6564C3862BC4B6EB00D32235 /* FMDatabasePool.m */,
+				6564C3802BC4B6EB00D32235 /* FMDatabaseQueue.h */,
+				6564C3832BC4B6EB00D32235 /* FMDatabaseQueue.m */,
+				6564C3822BC4B6EB00D32235 /* FMDB.h */,
+				6564C3852BC4B6EB00D32235 /* FMResultSet.h */,
+				6564C37D2BC4B6EB00D32235 /* FMResultSet.m */,
+				6564C37C2BC4B6EB00D32235 /* Yemekler-SwiftUI-Bridging-Header.h */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		6581E1402BB8C143007B6940 = {
@@ -92,6 +128,7 @@
 		65F4CBC92BBE0E9A00615BC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6564C37B2BC4B6DC00D32235 /* FMDB */,
 				6564C3772BC4B5AD00D32235 /* yemekler.sqlite */,
 				65B0444F2BB8C2B200825223 /* Model.swift */,
 			);
@@ -156,6 +193,7 @@
 				TargetAttributes = {
 					6581E1482BB8C143007B6940 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -197,10 +235,15 @@
 			files = (
 				6581E14F2BB8C143007B6940 /* HomeView.swift in Sources */,
 				65F4CBCD2BBE0EF500615BC0 /* HomeViewModel.swift in Sources */,
+				6564C3882BC4B6EB00D32235 /* FMResultSet.m in Sources */,
 				65B0444E2BB8C24500825223 /* DetailView.swift in Sources */,
 				6581E14D2BB8C143007B6940 /* Yemekler_SwiftUIApp.swift in Sources */,
 				65B044522BB8C5AD00825223 /* FoodRow.swift in Sources */,
 				65B044502BB8C2B200825223 /* Model.swift in Sources */,
+				6564C38C2BC4B6EB00D32235 /* FMDatabaseAdditions.m in Sources */,
+				6564C38B2BC4B6EB00D32235 /* FMDatabasePool.m in Sources */,
+				6564C3892BC4B6EB00D32235 /* FMDatabase.m in Sources */,
+				6564C38A2BC4B6EB00D32235 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yemekler-SwiftUI/Preview Content\"";
@@ -350,6 +394,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.furkancingoz.Yemekler-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yemekler-SwiftUI/Model/FMDB/Yemekler-SwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yemekler-SwiftUI/Preview Content\"";
@@ -379,6 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.furkancingoz.Yemekler-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yemekler-SwiftUI/Model/FMDB/Yemekler-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
