@@ -19,12 +19,32 @@ struct HomeView: View {
             FoodRow(food: food)
           }
         }
-      }.onAppear{
+      }.navigationTitle("Food List")
+      .onAppear{
           viewModel.loadList()
 
-      }.navigationTitle("Food List")
+      }
     }
   }
+    func veritabaniKopyala() {
+        let bundle = Bundle.main.path(forResource: "yemekler", ofType: ".sqlite")
+        
+        let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemekler.sqlite")
+        
+        let fm = FileManager.default
+        
+        if fm.fileExists(atPath: hedefYol.path) {
+            print("veri tabanı daha önce kopyaladın ya ??__?? ")
+        } else {
+            do {
+                try fm.copyItem(atPath: bundle!, toPath: hedefYol.path)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
 
 #Preview {
