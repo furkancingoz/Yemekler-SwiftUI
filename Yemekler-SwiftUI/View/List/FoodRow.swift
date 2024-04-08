@@ -12,16 +12,16 @@ struct FoodRow: View {
   var body: some View {
     VStack(alignment: .leading){
       HStack{
-        Image(food.name!.lowercased())
+        Image(food.yemek_resim_adi!)
           
           .resizable()
           .frame(width: 100,height: 100)
 
         VStack(spacing:30){
-          Text(food.name!)
+          Text(food.yemek_adi!)
             .font(.headline)
 
-          Text(food.price!)
+            Text("\(food.yemek_fiyat!)")
             .font(.subheadline)
             .foregroundStyle(.blue)
         }
