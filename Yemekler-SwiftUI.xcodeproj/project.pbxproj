@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6564C3782BC4B5AD00D32235 /* yemekler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6564C3772BC4B5AD00D32235 /* yemekler.sqlite */; };
+		655B8DAB2BC4BFF800BCB45C /* yemek.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 655B8DAA2BC4BFF800BCB45C /* yemek.sqlite */; };
 		6564C3882BC4B6EB00D32235 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C37D2BC4B6EB00D32235 /* FMResultSet.m */; };
 		6564C3892BC4B6EB00D32235 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C37E2BC4B6EB00D32235 /* FMDatabase.m */; };
 		6564C38A2BC4B6EB00D32235 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C3832BC4B6EB00D32235 /* FMDatabaseQueue.m */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6564C3772BC4B5AD00D32235 /* yemekler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yemekler.sqlite; sourceTree = "<group>"; };
+		655B8DAA2BC4BFF800BCB45C /* yemek.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yemek.sqlite; sourceTree = "<group>"; };
 		6564C37A2BC4B6A500D32235 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		6564C37C2BC4B6EB00D32235 /* Yemekler-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yemekler-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		6564C37D2BC4B6EB00D32235 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				6581E14C2BB8C143007B6940 /* Yemekler_SwiftUIApp.swift */,
+				655B8DAA2BC4BFF800BCB45C /* yemek.sqlite */,
 				65F4CBC92BBE0E9A00615BC0 /* Model */,
 				65F4CBCA2BBE0EA300615BC0 /* View */,
 				65F4CBCB2BBE0EDE00615BC0 /* ViewModel */,
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				6564C37B2BC4B6DC00D32235 /* FMDB */,
-				6564C3772BC4B5AD00D32235 /* yemekler.sqlite */,
 				65B0444F2BB8C2B200825223 /* Model.swift */,
 			);
 			path = Model;
@@ -220,9 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6564C3782BC4B5AD00D32235 /* yemekler.sqlite in Resources */,
 				6581E1542BB8C145007B6940 /* Preview Assets.xcassets in Resources */,
 				6581E1512BB8C145007B6940 /* Assets.xcassets in Resources */,
+				655B8DAB2BC4BFF800BCB45C /* yemek.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,9 @@ class FoodModel : Identifiable {
     var yemek_fiyat : Int?
     
     
-    init(){}
+    init(){
+        
+    }
     
     init(yemek_id: Int, yemek_adi: String, yemek_resim_adi: String, yemek_fiyat: Int) {
         self.yemek_id = yemek_id

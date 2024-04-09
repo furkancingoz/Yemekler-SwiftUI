@@ -21,29 +21,31 @@ struct HomeView: View {
         }
       }.navigationTitle("Food List")
       .onAppear{
+          veritabaniKopyala()
           viewModel.loadList()
 
       }
     }
   }
-    func veritabaniKopyala() {
-        let bundle = Bundle.main.path(forResource: "yemekler", ofType: ".sqlite")
+    func veritabaniKopyala(){
+        let bundle = Bundle.main.path(forResource: "yemek", ofType: ".sqlite")
         
         let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         
-        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemekler.sqlite")
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemek.sqlite")
         
         let fm = FileManager.default
         
-        if fm.fileExists(atPath: hedefYol.path) {
-            print("veri tabanı daha önce kopyaladın ya ??__?? ")
-        } else {
-            do {
+        if fm.fileExists(atPath: hedefYol.path){
+            print("Veritabanı daha önce kopyalandı.")
+        }else{
+            do{
                 try fm.copyItem(atPath: bundle!, toPath: hedefYol.path)
-            } catch {
+            }catch{
                 print(error.localizedDescription)
             }
         }
+        
     }
 }
 

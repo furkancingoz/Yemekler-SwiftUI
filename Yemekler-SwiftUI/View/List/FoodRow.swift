@@ -21,7 +21,7 @@ struct FoodRow: View {
           Text(food.yemek_adi!)
             .font(.headline)
 
-            Text("\(food.yemek_fiyat!)")
+            Text("\(food.yemek_fiyat!)₺")
             .font(.subheadline)
             .foregroundStyle(.blue)
         }

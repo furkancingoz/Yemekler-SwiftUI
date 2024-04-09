@@ -13,12 +13,12 @@ struct DetailView: View {
     var body: some View {
       VStack{
 
-        Image(food.yemek_adi!)
+        Image("\(food.yemek_resim_adi!)")
           .resizable()
           .frame(width: 250,height: 250)
           .padding()
 
-        Text("\(food.yemek_fiyat!)")
+        Text("\(food.yemek_fiyat!)₺")
           .font(.system(size: 50))
           .foregroundStyle(.blue)
           .padding()

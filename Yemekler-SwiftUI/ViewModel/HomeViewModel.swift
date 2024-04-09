@@ -11,22 +11,37 @@ class HomeViewModel : ObservableObject {
     
    @Published var foodList = [FoodModel]()
     
-    func loadList() {
-        var list = [FoodModel]()
-//        let f = FoodModel(name: "Ayran", price: "8₺")
-//        let f1 = FoodModel(name: "Baklava", price: "70₺")
-//        let f2 = FoodModel(name: "Fanta", price: "10₺")
-//        let f3 = FoodModel(name: "Kadayif", price: "50₺")
-//        let f4 = FoodModel(name: "Kofte", price: "60₺")
-//        let f5 = FoodModel(name: "Makarna", price: "55₺")
-//
-//        list.append(f)
-//        list.append(f1)
-//        list.append(f2)
-//        list.append(f3)
-//        list.append(f4)
-//        list.append(f5)
-
-        foodList = list
+    let db:FMDatabase?
+    
+    init(){
+        let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("yemek.sqlite")
+        db = FMDatabase(path: hedefYol.path)
+    }
+    
+    func loadList(){
+        db?.open()
+        
+        var liste = [FoodModel]()
+        
+        do{
+            let result = try db!.executeQuery("SELECT * FROM yemek", values: nil)
+            
+            while result.next() {
+                let yemek_id = Int(result.string(forColumn: "yemek_id"))!
+                let yemek_adi = result.string(forColumn: "yemek_adi")!
+                let yemek_resim_adi = result.string(forColumn: "yemek_resim_adi")!
+                let yemek_fiyat = Int(result.string(forColumn: "Field4"))!
+                
+                let yemek = FoodModel(yemek_id: yemek_id, yemek_adi: yemek_adi, yemek_resim_adi: yemek_resim_adi, yemek_fiyat: yemek_fiyat)
+                liste.append(yemek)
+            }
+            
+            foodList = liste
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
     }
 }
